@@ -8,6 +8,7 @@ ro.build.keystore.path=/sdcard/.lii/
 
 # Graphics
 debug.sf.enable_gl_backpressure=1
+debug.cpurend.vsync=false
 
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
