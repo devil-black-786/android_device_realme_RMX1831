@@ -153,11 +153,15 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.RMX1831
 
 # Memory optimization
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sys.fw.bservice_enable=true \
     ro.sys.fw.bservice_limit=5 \
     ro.sys.fw.bservice_age=5000 \
     ro.am.reschedule_service=true \
     ro.sys.fw.bg_apps_limit=24 
+
+# Graphics
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    debug.sf.enable_gl_backpressure=1
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
