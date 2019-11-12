@@ -151,4 +151,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.RMX1831
 
+# Rescue party disabled
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
+
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
