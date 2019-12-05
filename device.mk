@@ -206,4 +206,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 
 
+PRODUCT_PACKAGES += \
+    RcsService
+
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
