@@ -81,3 +81,6 @@ ro.config.alarm_vol_steps=15
 ro.config.system_vol_steps=15
 ro.config.ring_notification_vol_steps=15
 
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
+
