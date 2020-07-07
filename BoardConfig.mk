@@ -122,6 +122,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Symbols
+TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml

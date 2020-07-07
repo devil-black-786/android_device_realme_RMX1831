@@ -140,6 +140,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Symbols 
+PRODUCT_PACKAGES += \
+    libshim_showlogo
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1831
