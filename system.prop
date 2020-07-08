@@ -70,6 +70,7 @@ debug.performance.tuning=1
 debug.egl.profiler=1 
 debug.egl.hw=1
 debug.composition.type=gpu 
+ro.surface_flinger.running_without_sync_framework=true
 
 # LCD density
 ro.sf.lcd_density=480
