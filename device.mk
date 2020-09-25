@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX1831
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1831 \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Memory optimization
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
