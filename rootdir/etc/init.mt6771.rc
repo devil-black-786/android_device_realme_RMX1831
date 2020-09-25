@@ -84,3 +84,8 @@ on property:sys.boot_completed=1
     # force disable hw overlays to be true
     exec - root -- /system/bin/sh -c "service call SurfaceFlinger 1008 i32 1" 
 
+on post-fs-data
+
+on property:sys.boot_completed=1
+    setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
+
