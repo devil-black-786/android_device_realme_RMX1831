@@ -54,6 +54,10 @@ on boot
     # OTG
     write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
 
+    # FPS Info
+    chown system graphics /sys/module/primary_display/parameters/display_framerate_main
+    chmod 0666 /sys/module/primary_display/parameters/display_framerate_main
+
 on fs
     # Override vendor fstab again because things like Magisk will re-bind /vendor
     mount none /system/etc/fstab.mt6771 /vendor/etc/fstab.mt6771 bind
