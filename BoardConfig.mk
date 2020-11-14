@@ -50,7 +50,7 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Enable dexpreopt to speed boot time
-WITH_DEXPREOPT := true
+#WITH_DEXPREOPT := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.configfs=true androidboot.selinux=permissive
@@ -125,9 +125,6 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
-
-# Vendor
-TARGET_COPY_OUT_VENDOR := vendor
 
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
