@@ -126,9 +126,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Charger
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # Symbols
 TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
