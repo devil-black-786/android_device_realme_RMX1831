@@ -173,7 +173,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Graphics
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    debug.sf.enable_gl_backpressure=1
+    debug.sf.enable_gl_backpressure=1 \
+    ro.hardware.egl=mali 
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
