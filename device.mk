@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.1-service.widevine
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service \
