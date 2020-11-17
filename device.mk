@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.enableswap \
     init.mt6771.rc \
     fstab.mt6771 \
     init.safailnet.rc \
