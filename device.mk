@@ -179,4 +179,20 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_TARGET_VNDK_VERSION := 28
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
+<<<<<<< HEAD
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)
+=======
+# Ims Jars
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
+
+>>>>>>> bd68b98 (CPH1859: Initial IMS bringup)
