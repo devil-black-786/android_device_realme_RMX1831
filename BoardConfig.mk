@@ -126,9 +126,6 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Symbols
-TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
-
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
