@@ -184,8 +184,26 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
 
+# Properties
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 28
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
+
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 
 
 $(call inherit-product, vendor/realme/RMX1831/RMX1831-vendor.mk)

@@ -12,10 +12,6 @@ service charger /charger
     write /sys/class/android_usb/android0/enable 1
 
 on init
-    # Force disable all VoLTE support -- it requires intensive modification of frameworks
-    # without framework support it creates all sorts of problems. Disable it.
-    setprop persist.vendor.mtk.volte.enable 0
-    setprop persist.vendor.mtk_ct_volte_support 0
     
     # Custom overrides that need to happen right on boot
     # Override vendor fstab
@@ -59,9 +55,6 @@ on fs
     mount none /system/etc/fstab.mt6771 /vendor/etc/fstab.mt6771 bind
 
 on post-fs
-    # Override stock libmtk-ril.so with Hex-edited libmtk-ril.so to fix incoming calls
-    mount none /system/lib64/libmtk-ril.so /vendor/lib64/libmtk-ril.so bind
-
     # Disable OEM Lights
     mount none /dev/null vendor/lib/hw/lights.mt6771.so bind
     mount none /dev/null vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so bind
