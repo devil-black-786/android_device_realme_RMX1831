@@ -102,3 +102,14 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # Charger
 ro.charger.enable_suspend=true
+
+# IMS 
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Hotspot
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
