@@ -1,6 +1,5 @@
 DEVICE_PATH := device/realme/RMX1831
 BOARD_VENDOR := realme
-BUILD_BROKEN_DUP_RULES := true
 
 # Broken R
 BUILD_BROKEN_DUP_RULES := true
