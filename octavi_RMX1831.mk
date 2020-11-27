@@ -7,6 +7,8 @@ $(call inherit-product, vendor/octavi/config/common.mk)
 IS_PHONE := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+OCTAVI_BUILD_TYPE=Official
+OCTAVI_DEVICE_MAINTAINER := ProNoob
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
