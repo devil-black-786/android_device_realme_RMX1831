@@ -2,8 +2,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Octavi OS stuff
+$(call inherit-product, vendor/octavi/config/common.mk)
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -14,7 +17,7 @@ $(call inherit-product, device/realme/RMX1831/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1831
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1831
+PRODUCT_NAME := octavi_RMX1831
 PRODUCT_MODEL := realme U1
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
