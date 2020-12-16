@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.mt6771.rc \
+    init.target.rc \
     fstab.mt6771 \
     init.safailnet.rc \
     init.recovery.mt6771.rc \
